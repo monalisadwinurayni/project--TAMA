@@ -1,0 +1,205 @@
+/* 🎨 STYLE UMUM */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fce8f1, #e6f3ff);
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* 🌸 HEADER */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ff80b5;
+  text-shadow: 2px 2px #ffd6e8;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  color: #5f6caf;
+}
+
+/* 🗓️ BAGIAN UTAMA */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* 📘 TABEL JADWAL */
+#jadwal {
+  flex: 1;
+  min-width: 600px;
+  background: #ffffffb7;
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#jadwal h3 {
+  text-align: center;
+  color: #7d5fff;
+  margin-bottom: 15px;
+}
+
+.tabel-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #f3d0e0;
+}
+
+th {
+  background-color: #ffbde6;
+  color: #fff;
+  font-weight: 600;
+}
+
+td {
+  background-color: #fff8fb;
+  transition: background-color 0.3s ease;
+}
+
+td:hover {
+  background-color: #fce4f7;
+}
+
+/* 🌈 DEADLINE TUGAS */
+#deadline {
+  flex: 0.8;
+  min-width: 350px;
+  background: #ffffffb7;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#deadline h3 {
+  text-align: center;
+  color: #ff7eb3;
+  margin-bottom: 20px;
+}
+
+/* 📝 FORM DEADLINE */
+.form-deadline {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #6b6b83;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ffccdf;
+  background-color: #fff8fb;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff8ec8;
+  outline: none;
+  background-color: #ffe6f2;
+}
+
+button {
+  background-color: #ff91c1;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #ff63a8;
+}
+
+/* 📋 DAFTAR TUGAS */
+.daftar-tugas h4 {
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+#listTugas {
+  list-style: none;
+}
+
+#listTugas li {
+  background-color: #ffeef6;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-left: 5px solid #ff8ec8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#listTugas li span {
+  display: block;
+}
+
+/* ✨ FOOTER */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #7a7a9d;
+  font-size: 0.9rem;
+}
+
+/* 💖 HIASAN TAMBAHAN */
+body::before {
+  content: "🌸";
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 30px;
+  opacity: 0.2;
+}
+
+body::after {
+  content: "💫";
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  font-size: 30px;
+  opacity: 0.2;
+}
